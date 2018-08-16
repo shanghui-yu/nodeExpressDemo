@@ -1,0 +1,23 @@
+{
+	"apps" : [{
+		"name" : "localtion",
+		"script": "utils/token.js",
+		"cwd": "./",
+		"watch":[
+			"*"
+		],
+		"ignore_watch": [
+			"node_modules",
+			"logs",
+			"public"
+		],
+		"max_memory_restart": "100M",
+		"max_restarts": 5,
+		"out_file": "/dev/null",
+		"error_file": "/dev/null",
+		"env": {
+			"NODE_ENV": "production",
+			"HOST": "0.0.0.0"
+		}
+	}]
+}
